@@ -1,9 +1,8 @@
-import React,  { useState, useEffect } from 'react';
-import {useTable} from 'react-table';
+import React, { useState, useEffect } from 'react';
+import { useTable } from 'react-table';
 
 
 import EditUserModel from '.EditUserModel';
-
 function UserForm() {
     const [users, setUsers] = useState([]);
     const [isEditing, setIsEditing] = useState(false);
