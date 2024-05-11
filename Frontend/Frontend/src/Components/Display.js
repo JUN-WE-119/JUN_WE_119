@@ -3,7 +3,7 @@ import {useTable} from 'react-table';
 
 
 import EditUserModel from '.EditUserModel';
-function UserForm
+function UserForm()
 // function UserForm() {
 //     const [users, setUsers] = useState([]);
 //     const [isEditing, setIsEditing] = useState(false);
