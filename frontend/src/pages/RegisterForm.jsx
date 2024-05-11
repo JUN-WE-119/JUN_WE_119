@@ -19,7 +19,7 @@ const RegisterForm = () => {
         "http://localhost:8081/register",
         formData
       );
-      console.log(response.data); // You can handle success response here
+      console.log(response.data);
     } catch (error) {
       console.error("Error:", error);
     }
