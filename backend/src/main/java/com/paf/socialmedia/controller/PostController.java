@@ -27,6 +27,8 @@ public class PostController {
         return postService.getPosts();
     }
 
+    // Get all posts
+
     // Get posts by user ID
     @GetMapping("/user/{id}")
     public ResponseEntity<?> getPostsByUserId(@PathVariable String id){
