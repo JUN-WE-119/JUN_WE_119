@@ -30,7 +30,7 @@ const DeleteUpdate = () => {
             onClick={handleDeleteWorkout}
             className=" bg-[#ffb703] w-32 font-semibold px-4 py-1 rounded-lg text-white"
           >
-            Yes, Delete
+            Delete
           </button>
           <Link to="/updates">
             <button className=" bg-red-400 w-32 font-semibold px-4 py-1 rounded-lg text-white">
