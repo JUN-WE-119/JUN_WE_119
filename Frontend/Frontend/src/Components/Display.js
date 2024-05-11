@@ -1,4 +1,4 @@
-import React,
+import React, 
 import { useTable } from 'react-table';
 
 import EditUserModal from './EditUserModal'; // Assuming you have this modal component
