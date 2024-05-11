@@ -45,6 +45,9 @@ public class AuthController {
     @Autowired
     UserRepository userRepository;
 
+    // @Autowired
+    // UserRepository userRepository;
+
 
     // Register a new user and accepts 'SignupDTO' object
     // Creates a new user in the database based on username and password
