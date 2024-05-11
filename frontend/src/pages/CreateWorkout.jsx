@@ -38,7 +38,7 @@ const CreateWorkout = () => {
   return (
     <div className="w-full absolute px-20 ">
       <div className="mt-24 w-[40%] mx-auto shadow-lg p-5 rounded-lg ">
-        <form>
+        <form />
           <div className="flex flex-col gap-2 mb-5 ">
             <label className="text-lg font-medium">Age</label>
             <input
