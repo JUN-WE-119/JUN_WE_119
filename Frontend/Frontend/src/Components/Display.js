@@ -5,7 +5,7 @@ import {useTable} from 'react-table';
 import EditUserModel from '.EditUserModel';
 function UserForm() {
     const [users, setUsers] = useState([]);
-    const [isEditing, setIsEditing] = 
+    const [isEditing, setIsEditing] = useState
 }
 // function UserForm() {
 //     const [users, setUsers] = useState([]);
