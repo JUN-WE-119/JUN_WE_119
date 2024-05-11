@@ -2,7 +2,7 @@ import React,  { useState, useEffect } from 'react';
 import {useTable} from 'react-table';
 
 
-import Edit
+import EditUser
 // import EditUserModal from './EditUserModal'; // Assuming you have this modal component
 
 function UserForm() {
