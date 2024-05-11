@@ -1,7 +1,5 @@
-// import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 import Updates from "./pages/Updates";
 import CreateUpdate from "./pages/CreateUpdate";
 import EditUpdate from "./pages/EditUpdate";
@@ -10,7 +8,6 @@ import Workouts from "./pages/Workouts";
 import CreateWorkout from "./pages/CreateWorkout";
 import EditWorkout from "./pages/EditWorkout";
 import DeleteWorkout from "./pages/DeleteWorkout";
-// import Wall from "./pages/Wall";
 import RegisterForm from "./pages/RegisterForm";
 
 function App() {
