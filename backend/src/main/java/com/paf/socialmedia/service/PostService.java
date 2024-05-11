@@ -92,6 +92,59 @@ public class PostService {
         return new ResponseEntity<List<PostDTO>>(postDTOList, HttpStatus.OK);
     }
 
+    // public ResponseEntity<?> getPostsByUserId(String userId) {
+    //     List<Post> posts = postRepository.findByUserId(userId);
+    //     List<PostDTO> postDTOList = new ArrayList<>();
+
+    //     for (Post post:posts) {
+    //         PostDTO postDTO = new PostDTO();
+    //         postDTO.setId(post.getId());
+    //         postDTO.setCaption(post.getCaption());
+    //         postDTO.setImgLink(post.getImgLink());
+    //         postDTO.setUpdatedAt(post.getUpdatedAt());
+    //         postDTO.setCreatedAt(post.getCreatedAt());
+    //         postDTO.setLikedby(post.getLikedby());
+    //         postDTO.setUserId(post.getUserId());
+
+    //         Optional<User> user =  userRepository.findById(post.getUserId());
+    //         if(user.isPresent()) {
+    //             postDTO.setUsername(user.get().getUsername());
+    //             postDTO.setProfileImage(user.get().getProfileImage());
+    //         }
+
+    //         List<Comment> comments = commentRepository.findByPostId(post.getId());
+    //         if(comments.size() > 0){
+    //             List<CommentDTO> commentDTOList = new ArrayList<>();
+
+    //             for(Comment comment: comments){
+    //                 CommentDTO commentDTO = new CommentDTO();
+    //                 commentDTO.setId(comment.getId());
+    //                 commentDTO.setText(comment.getText());
+    //                 commentDTO.setPostId(comment.getPostId());
+    //                 commentDTO.setCreatedAt(comment.getCreatedAt());
+    //                 commentDTO.setUpdatedAt(comment.getUpdatedAt());
+    //                 commentDTO.setUserId(comment.getUserId());
+    //                 Optional<User> commentedUser =  userRepository.findById(comment.getUserId());
+    //                 if(commentedUser.isPresent()) {
+    //                     commentDTO.setUsername(commentedUser.get().getUsername());
+    //                     commentDTO.setProfileImage(commentedUser.get().getProfileImage());
+    //                 }
+    //                 if(commentedUser.isPresent()) {
+    //                     commentDTOList.add(commentDTO);
+    //                 }
+
+    //             }
+
+    //             postDTO.setComments(commentDTOList);
+    //         }
+    //         if(user.isPresent()) {
+    //             postDTOList.add(postDTO);
+    //         }
+
+    //     }
+
+    //     return new ResponseEntity<List<PostDTO>>(postDTOList, HttpStatus.OK);
+    // }
     public ResponseEntity<?> getPostsByUserId(String userId) {
         List<Post> posts = postRepository.findByUserId(userId);
         List<PostDTO> postDTOList = new ArrayList<>();
@@ -145,6 +198,7 @@ public class PostService {
 
         return new ResponseEntity<List<PostDTO>>(postDTOList, HttpStatus.OK);
     }
+
     public ResponseEntity<?> savePost(Post postShare){
         try{
             postShare.setCreatedAt(new Date(System.currentTimeMillis()));
