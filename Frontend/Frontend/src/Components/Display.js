@@ -1,16 +1,16 @@
-import React,  { useState, useEffect } from 'react';
-import {useTable} from 'react-table';
+import React, { useState, useEffect } from 'react';
+import { useTable } from 'react-table';
 
 
 import EditUserModel from '.EditUserModel';
 function UserForm() {
     const [users, setUsers] = useState([]);
     const [isEditing, setIsEditing] = useState(false);
-const [editingUser, setEditingUser] = useState(null);
+    const [editingUser, setEditingUser] = useState(null);
 
-     useEffect(() => {
-         fetchUsers();
-     }, []);
+    useEffect(() => {
+        fetchUsers();
+    }, []);
 
     const fetchUsers = async () => {
         try {
