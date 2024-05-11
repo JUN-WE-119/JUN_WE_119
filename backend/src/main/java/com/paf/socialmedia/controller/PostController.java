@@ -27,6 +27,8 @@ public class PostController {
         return postService.getPosts();
     }
 
+    // Get all posts
+
     // Get posts by user ID
     @GetMapping("/user/{id}")
     public ResponseEntity<?> getPostsByUserId(@PathVariable String id){
@@ -51,12 +53,13 @@ public class PostController {
         return  postService.likePostById(id,post);
     }
 
-    // Delete a post by its ID
+    
     // @DeleteMapping("/{id}")
     // public ResponseEntity<?> deletePostById(@PathVariable String id){
     //     return postService.deletePostById(id);
     // }
 
+    // Delete a post by its ID
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletePostById(@PathVariable String id){
         return postService.deletePostById(id);
