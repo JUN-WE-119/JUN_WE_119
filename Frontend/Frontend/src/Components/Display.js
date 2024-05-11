@@ -6,15 +6,11 @@ import EditUserModel from '.EditUserModel';
 function UserForm() {
     const [users, setUsers] = useState([]);
     const [isEditing, setIsEditing] = useState(false);
-}
-// function UserForm() {
-//     const [users, setUsers] = useState([]);
-//     const [isEditing, setIsEditing] = useState(false);
-//     const [editingUser, setEditingUser] = useState(null);
+const [editingUser, setEditingUser] = useState(null);
 
-//     useEffect(() => {
-//         fetchUsers();
-//     }, []);
+     useEffect(() => {
+         fetchUsers();
+     }, []);
 
     const fetchUsers = async () => {
         try {
