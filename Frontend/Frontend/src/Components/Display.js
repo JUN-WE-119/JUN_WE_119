@@ -3,7 +3,6 @@ import {useTable} from 'react-table';
 
 
 import EditUserModel from '.EditUserModel';
-// import EditUserModal from './EditUserModal'; // Assuming you have this modal component
 
 function UserForm() {
     const [users, setUsers] = useState([]);
