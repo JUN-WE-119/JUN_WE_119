@@ -13,7 +13,7 @@ const DeleteWorkout = () => {
         navigate("/workouts");
       })
       .catch((err) => {
-        alert("Somethnig went wrong..");
+       
         console.log(err);
       });
   };
