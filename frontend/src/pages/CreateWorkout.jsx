@@ -82,7 +82,7 @@ const CreateWorkout = () => {
           </div>
 
           {/* dropdown bodywant */}
-    
+          <div className="flex flex-col gap-2 mb-5 ">
             <label className="text-lg font-medium">Body Want</label>
             <select
               name="cars"
