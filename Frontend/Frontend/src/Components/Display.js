@@ -13,7 +13,9 @@ function UserForm() {
     }, []);
 
     const fetchUsers = async () => {
-        try {}
+        try {
+            
+        }
     }
     // const fetchUsers = async () => {
     //     try {
