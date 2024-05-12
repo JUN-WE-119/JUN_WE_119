@@ -226,18 +226,18 @@ public class PostService {
             return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
         }
     }
-    // public ResponseEntity<?> likePostById(String id,Post post){
-    //     Optional<Post> existingPost =  postRepository.findById(id);
-    //     if(existingPost.isPresent()){
-    //         Post updatePost = existingPost.get();
-    //         if(post.getLikedby() != null) {
-    //             updatePost.setLikedby(post.getLikedby());
-    //         }
-    //         return new ResponseEntity<>(postRepository.save(updatePost), HttpStatus.OK);
-    //     }else{
-    //         return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
-    //     }
-    // }
+    public ResponseEntity<?> likePostById(String id,Post post){
+        Optional<Post> existingPost =  postRepository.findById(id);
+        if(existingPost.isPresent()){
+            Post updatePost = existingPost.get();
+            if(post.getLikedby() != null) {
+                updatePost.setLikedby(post.getLikedby());
+            }
+            return new ResponseEntity<>(postRepository.save(updatePost), HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
+        }
+    }
     public ResponseEntity<?> deletePostById(String id){
         try{
             postRepository.deleteById(id);
