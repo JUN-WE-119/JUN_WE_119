@@ -12,7 +12,7 @@ function UserForm() {
         fetchUsers();
     }, []);
 
-    const fetchUsers = async () =>
+    const fetchUsers = async () => {}
     // const fetchUsers = async () => {
     //     try {
     //         const response = await fetch('http://localhost:8080/api/v1/user/getUsers');
