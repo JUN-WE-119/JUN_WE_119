@@ -22,25 +22,27 @@ function UserForm() {
         }
     };
 
-    const handleDelete = async (id) => {
-        try {
-            const response = await fetch(`http://localhost:8080/api/v1/user/deletUser`, {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ id }),
-            });
+    
 
-            if (response.ok) {
-                fetchUsers();
-            } else {
-                console.error('Failed to delete user');
-            }
-        } catch (error) {
-            console.error('Error deleting user:', error);
-        }
-    };
+    // const handleDelete = async (id) => {
+    //     try {
+    //         const response = await fetch(`http://localhost:8080/api/v1/user/deletUser`, {
+    //             method: 'DELETE',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({ id }),
+    //         });
+
+    //         if (response.ok) {
+    //             fetchUsers();
+    //         } else {
+    //             console.error('Failed to delete user');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error deleting user:', error);
+    //     }
+    // };
 
     const handleEdit = (user) => {
         setEditingUser(user);
