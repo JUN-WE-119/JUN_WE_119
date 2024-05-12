@@ -77,7 +77,7 @@ const CreateWorkout = () => {
             >
               <option value="LoseWeight">LoseWeight</option>
               <option value="GainMuscleMass">GainMuscleMass</option>
-              <option value="GetShredded">GetShredded</option>
+             
             </select>
           </div>
 
