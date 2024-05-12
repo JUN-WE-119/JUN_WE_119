@@ -24,9 +24,7 @@ public class PlanController {
     @Autowired
     private PlanRepository planRepository;
 
-    @PostMapping("/plan")
-    Plan newPlan(@RequestBody Plan newPlan){
-        return planRepository.save(newPlan);
+    
     }
 
     @GetMapping("/plans")
