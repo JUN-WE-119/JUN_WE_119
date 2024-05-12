@@ -58,7 +58,7 @@ const CreateWorkout = () => {
               name="bodyType"
               id="bodyType"
               value={bodyType}
-              onChange={(e) => setBodyType(e.target.value)}
+             
             >
               <option value="Slim">Slim</option>
               <option value="Average">Average</option>
