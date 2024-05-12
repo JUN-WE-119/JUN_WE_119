@@ -68,7 +68,7 @@
 
 // export default Header;
 
-import gym_01 from "../assets/gym_01.jpg";
+// import gym_01 from "../assets/gym_01.jpg";
 
 const Header = () => {
   return (
