@@ -41,7 +41,17 @@ public class WorkoutController {
             .orElseThrow(() -> new WorkoutNotFoundException(id));
     }
 
-
+    @PutMapping("/workout/{id}")
+    Workout updateWorkout(@RequestBody Workout newWorkout,@PathVariable Long id){
+        return workoutRepository.findById(id)
+            .map(Workout -> {
+                Workout.setexercise(newWorkout.getexercise());
+                Workout.setsets(newWorkout.getsets());
+                Workout.setreps(newWorkout.getreps());
+                Workout.setweight(newWorkout.getweight());
+                Workout.setnotes(newWorkout.getnotes());
+                return workoutRepository.save(Workout);
+            }).orElseThrow();
     }
 
     @DeleteMapping("/workout/{id}")
