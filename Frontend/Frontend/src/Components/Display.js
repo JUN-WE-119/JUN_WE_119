@@ -22,7 +22,9 @@ function UserForm() {
         }
     };
 
-    const handleDelete = async (id) =>
+    const handleDelete = async (id) => {
+        
+    }
 
     // const handleDelete = async (id) => {
     //     try {
