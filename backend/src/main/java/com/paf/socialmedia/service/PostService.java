@@ -210,22 +210,22 @@ public class PostService {
         }
     }
 
-    public ResponseEntity<?> updatePostById(String id,Post post){
-        Optional<Post> existingPost =  postRepository.findById(id);
-        if(existingPost.isPresent()){
-            Post updatePost = existingPost.get();
-            if(post.getCaption() != null) {
-                updatePost.setCaption(post.getCaption());
-            }
-            if(post.getImgLink() != null) {
-                updatePost.setImgLink(post.getImgLink());
-            }
-            updatePost.setUpdatedAt(new Date(System.currentTimeMillis()));
-            return new ResponseEntity<>(postRepository.save(updatePost), HttpStatus.OK);
-        }else{
-            return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
-        }
-    }
+    // public ResponseEntity<?> updatePostById(String id,Post post){
+    //     Optional<Post> existingPost =  postRepository.findById(id);
+    //     if(existingPost.isPresent()){
+    //         Post updatePost = existingPost.get();
+    //         if(post.getCaption() != null) {
+    //             updatePost.setCaption(post.getCaption());
+    //         }
+    //         if(post.getImgLink() != null) {
+    //             updatePost.setImgLink(post.getImgLink());
+    //         }
+    //         updatePost.setUpdatedAt(new Date(System.currentTimeMillis()));
+    //         return new ResponseEntity<>(postRepository.save(updatePost), HttpStatus.OK);
+    //     }else{
+    //         return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
+    //     }
+    // }
     public ResponseEntity<?> likePostById(String id,Post post){
         Optional<Post> existingPost =  postRepository.findById(id);
         if(existingPost.isPresent()){
