@@ -238,12 +238,12 @@ public class PostService {
             return new ResponseEntity<>("Post Update Error",HttpStatus.NOT_FOUND);
         }
     }
-    public ResponseEntity<?> deletePostById(String id){
-        try{
-            postRepository.deleteById(id);
-            return new ResponseEntity<>("Success deleted with " + id,HttpStatus.OK);
-        }catch (Exception e){
-            return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
-        }
-    }
+    // public ResponseEntity<?> deletePostById(String id){
+    //     try{
+    //         postRepository.deleteById(id);
+    //         return new ResponseEntity<>("Success deleted with " + id,HttpStatus.OK);
+    //     }catch (Exception e){
+    //         return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);
+    //     }
+    // }
 }
