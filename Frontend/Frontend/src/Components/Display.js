@@ -17,7 +17,7 @@ function UserForm() {
             const response = await fetch('http://localhost:8080/api/v1/user/getUsers');
             const data = await response.json();
             setUsers(data);
-        } catch
+        } catch (error)
     }
     // const fetchUsers = async () => {
     //     try {
