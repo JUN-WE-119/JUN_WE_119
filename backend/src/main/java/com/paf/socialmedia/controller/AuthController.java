@@ -51,15 +51,15 @@ public class AuthController {
 
     // Register a new user and accepts 'SignupDTO' object
     // Creates a new user in the database based on username and password
-    @PostMapping("/register")
-    public ResponseEntity register(@RequestBody SignupDTO signupDTO) {
-        User user = new User(signupDTO.getUsername(), signupDTO.getPassword());
-        userDetailsManager.createUser(user);
+    // @PostMapping("/register")
+    // public ResponseEntity register(@RequestBody SignupDTO signupDTO) {
+    //     User user = new User(signupDTO.getUsername(), signupDTO.getPassword());
+    //     userDetailsManager.createUser(user);
 
-        Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(user, signupDTO.getPassword(), Collections.EMPTY_LIST);
+    //     Authentication authentication = UsernamePasswordAuthenticationToken.authenticated(user, signupDTO.getPassword(), Collections.EMPTY_LIST);
 
-        return ResponseEntity.ok(tokenGenerator.createToken(authentication));
-    }
+    //     return ResponseEntity.ok(tokenGenerator.createToken(authentication));
+    // }
 
     // Login a user and accepts 'LoginDTO' object
     // DaoAuthenticationProvider authenticates the user
