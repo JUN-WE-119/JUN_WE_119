@@ -23,7 +23,9 @@ function UserForm() {
     };
 
     const handleDelete = async (id) => {
-        try
+        try {
+            
+        }
     }
 
     // const handleDelete = async (id) => {
