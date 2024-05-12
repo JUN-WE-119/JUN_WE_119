@@ -129,7 +129,7 @@ const CreateWorkout = () => {
               type="number"
               name="currentweight"
               value={currentweight}
-              onChange={(e) => setCurrentweight(e.target.value)}
+            
               placeholder="Excersice"
               className="ring-1 ring-slate-400 rounded-md py-1 px-2 "
             />
