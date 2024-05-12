@@ -85,10 +85,10 @@ const Header = () => {
           ratione. Esse eius est ab fuga eligendi accusamus eum aliquam sapiente
           perferendis excepturi modi, ratione aliquid sunt unde magni minima ad
           ipsa.
-        {/* </p>
+        </p>
         <button className="bg-yellow-400 px-8 py-2 rounded-lg text-white hover:bg-yellow-500 transition duration-300">
           See More
-        </button> */}
+        </button>
       </div>
       <div className="flex-1 flex justify-center items-center md:mt-16 mt-10">
         <div className="md:w-[500px] w-[300px] h-[500px] bg-white rounded-xl shadow-lg overflow-hidden">
