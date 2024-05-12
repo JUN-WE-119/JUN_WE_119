@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@RestController
-@CrossOrigin("http://localhost:5173")
-public class PlanController {
+
 
     @Autowired
     private PlanRepository planRepository;
