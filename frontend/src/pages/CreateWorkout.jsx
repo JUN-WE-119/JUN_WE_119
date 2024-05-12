@@ -10,7 +10,7 @@ const CreateWorkout = () => {
   const [problemarea, setProblemarea] = useState("");
   const [height, setHeight] = useState(0);
   const [currentweight, setCurrentweight] = useState(0);
-  const [targetweight, setTargetweight] = useState(0);
+
   const navigate = useNavigate();
 
   const handleCreatePlan = (e) => {
