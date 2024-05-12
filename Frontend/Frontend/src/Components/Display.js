@@ -21,15 +21,6 @@ function UserForm() {
             console.error('Error fetching users:', error);
         }
     };
-    // const fetchUsers = async () => {
-    //     try {
-    //         const response = await fetch('http://localhost:8080/api/v1/user/getUsers');
-    //         const data = await response.json();
-    //         setUsers(data);
-    //     } catch (error) {
-    //         console.error('Error fetching users:', error);
-    //     }
-    // };
 
     const handleDelete = async (id) => {
         try {
