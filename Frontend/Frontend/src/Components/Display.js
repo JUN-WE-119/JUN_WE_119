@@ -24,7 +24,7 @@ function UserForm() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await
+            const response = await fetch
         }
     }
 
