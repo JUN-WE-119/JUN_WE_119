@@ -14,7 +14,7 @@ function UserForm() {
 
     const fetchUsers = async () => {
         try {
-            const response = 
+            const response = await
         }
     }
     // const fetchUsers = async () => {
