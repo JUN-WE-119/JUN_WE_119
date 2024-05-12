@@ -17,8 +17,7 @@ const CreateWorkout = () => {
     const data = {
       age,
       bodyType,
-      goal,
-      bodywant,
+ 
       problemarea,
       height,
       currentweight,
