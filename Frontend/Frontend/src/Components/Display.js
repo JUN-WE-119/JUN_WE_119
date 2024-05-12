@@ -18,7 +18,7 @@ function UserForm() {
             const data = await response.json();
             setUsers(data);
         } catch (error) {
-            console
+            console.error
         }
     }
     // const fetchUsers = async () => {
