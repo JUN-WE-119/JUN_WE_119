@@ -39,10 +39,10 @@ public class PostShareService {
         }
     }
 
-    public ResponseEntity<?> getPosts(){
-        List<PostShare> notifications = postShareRepository.findAll();
-        return new ResponseEntity<List<PostShare>>(notifications, HttpStatus.OK);
-    }
+    // public ResponseEntity<?> getPosts(){
+    //     List<PostShare> notifications = postShareRepository.findAll();
+    //     return new ResponseEntity<List<PostShare>>(notifications, HttpStatus.OK);
+    // }
 
     public ResponseEntity<?> getsharedPostsByUserId(String userId) {
         List<PostShare> sharedPosts = postShareRepository.findByUserId(userId);
