@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
-public interface PostRepository extends MongoRepository<Post,String> {
-    List<Post> findByUserId(String userId);
-}
+// @Repository
+// public interface PostRepository extends MongoRepository<Post,String> {
+//     List<Post> findByUserId(String userId);
+// }
