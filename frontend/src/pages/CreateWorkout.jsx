@@ -22,7 +22,7 @@ const CreateWorkout = () => {
       problemarea,
       height,
       currentweight,
-     
+      targetweight,
     };
 
     e.preventDefault();
