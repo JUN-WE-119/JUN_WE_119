@@ -62,7 +62,7 @@ const CreateWorkout = () => {
             >
               <option value="Slim">Slim</option>
               <option value="Average">Average</option>
-              <option value="Heavey">Heavey</option>
+             
             </select>
           </div>
 
